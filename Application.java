@@ -9,6 +9,18 @@
         "http://search.oracle.com/Admin",
         "AdminService"
 
+
+#feature202        // 6. Use object key above to get schedule state
+        oo = adminPort.getState(
+          "schedule",
+          objectKey,
+          null, // request all state properties
+          credentials,
+          null,
+          "en"
+ by mahi for Reports module in oct2023
+#end feature202
+=======
 #feature201 changes by vishal payment gateway module oct2023
 #!/bin/sh
  
@@ -20,3 +32,4 @@ $ORACLE_BASE/jrockit_160_14_R27.6.5-32/bin/javac -cp $CLASSPATH CreateWebSource.
 # Run
 $ORACLE_BASE/jrockit_160_14_R27.6.5-32/jre/bin/java -cp $CLASSPATH CreateWebSource $@
 #feature201 changes end
+
